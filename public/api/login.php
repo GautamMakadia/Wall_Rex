@@ -4,7 +4,7 @@
 $connection = mysqli_connect("localhost","root","","project");
 
 if (!$connection){
-    echo "connection error";
+    echo "connection error !";
 }
 // Connection successful, perform your database operations here...
 $email = $_POST['email'];
