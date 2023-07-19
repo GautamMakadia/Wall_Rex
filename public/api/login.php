@@ -4,7 +4,7 @@
 $connection = mysqli_connect("localhost","root","","project");
 
 if (!$connection){
-    echo "connection error";
+    echo "connection error !";
 }
 // Connection successful, perform your database operations here...
 $email = $_POST['email'];
@@ -21,9 +21,9 @@ mysqli_close($connection);
 
 if (verify_login_detailes($result_data, $email, $password)) {
     
-    echo "Login successful!";
+    echo "Login successful !";
 } else {
-    echo "Login failed. Please try again.";
+    echo "Login failed. Please try again !";
 }
 
 function verify_login_detailes($result, $email, $password) {

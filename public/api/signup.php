@@ -9,7 +9,7 @@ $conf_password = $_POST['conf_password'];
 // user is already signedup, just show user already exist or use other email address.
 if (is_user_exist($email)) {
     //is_user_exist() == true
-    echo "User Already Exsists";
+    echo "User Already Exsists !";
     /** 
      * user is available in database.So, no need to add it again.
      * show apropriate message.
@@ -25,10 +25,10 @@ if (is_user_exist($email)) {
     $query = "INSERT INTO user (username, email, password) 
   			  VALUES('$username', '$email', '$password')";
     if (!mysqli_query($connection, $query)) {
-        echo "insert failed.";
+        echo "insert failed !";
     }
     else{
-        echo "Insert Succesfully";
+        echo "Insert Succesfully !";
     }
      // create connection
      // create insert query
