@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html>
     <head>
         <title>User Registration</title>
@@ -6,13 +6,13 @@
     <body>
     <h2>User Registration</h2>
 
-    <!--<?php if (!empty($errors)) : ?>
+    <?php if (!empty($errors)) : ?>
         <ul>
             <?php foreach ($errors as $error) : ?>
                 <li><?php echo $error; ?></li>
             <?php endforeach; ?>
         </ul>
-    <?php endif; ?> --> 
+    <?php endif; ?>
 
     <form method="POST" action="/signup.php">
         <label for="username">Username:</label>
@@ -33,4 +33,51 @@
         <p>Already Registered ?<a href="login.html">Login Here</a></p>    
     </div>
 </body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+  <body>
+    <div class="container">
+      <h2>Sign Up</h2>
+      <form method="POST" action="signup.php">
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username"><br>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br>
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"><br>
+        </div>
+
+        <div class="form-group">
+            <label for="conf_password">Confirm Password:</label>
+            <input type="password" id="conf_password" name="conf_password"><br>
+        </div>
+
+        <div class="form-group">
+            <input type="submit" value="Login">
+        </div>
+
+        <div class="form-group signup-link">
+            <p>Already Registered <a href="login.html">Login Here</a></p> 
+        </div>
+
+      </form>
+    </div>
+  </body>
 </html>
